@@ -20,7 +20,6 @@ var newPlayer = addNewPlayer.addEventListener("change", function () {
     newPlayer = this.value;
     numOfPlayers = newPlayer;
     numOfPlayers++;
-    addPlayers();
 });
 
 var applyNewPlayer = document.querySelector("#addPlayers #add");
