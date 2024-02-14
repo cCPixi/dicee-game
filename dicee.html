@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dicee</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="heading">Rolling fun</h1>
+      <p id="result" class="hide"></p>
+      <div id="addPlayers">
+        <label for="numplayers">Spieler hinzufügen</label>
+        <input name="numplayers" type="number" value="2" min="2" max="6" class="add-players"/>
+        <button id="add" class="dice-roll">OK</button>
+      </div>
+      <button id="restartGame" class="reset-btn hide">Nochmal spielen</button>
+    </div>
+    <div id="dicee" class="container">
+
+    </div>
+  </body>
+  <script src="dice.js"></script>
+  <footer>
+    www 🎲 <a href="https://github.com/cCPixi">roll-the-dice</a> 🎲 com
+  </footer>
+</html>

@@ -1,0 +1,161 @@
+body {
+  background-color: #393E46;
+  font-family: 'Indie Flower', cursive;
+}
+
+#heading {
+  width: 100%;
+  margin: 30px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 8rem;
+  color: #4ECCA3;
+}
+
+p {
+  font-size: 2rem;
+  color: #4ECCA3;
+}
+
+img {
+  width: 80%;
+}
+
+footer {
+  margin-top: 5%;
+  color: #EEEEEE;
+  text-align: center;
+}
+
+footer a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* *//* * *//* * *//* */
+.container {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4%;
+}
+
+div#dicee {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}  
+
+
+.players, .dice-box {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-basis: auto;
+  flex-wrap: wrap;
+  width: auto;
+  flex-grow: 1;
+}
+.dice-box{
+  width: 100%;
+}
+
+input.playerName, input.add-players, #addPlayers label{
+  width: auto;
+  /* margin: 0 25%; */
+  max-width: 220px;
+  padding: 0 0 .6rem 0;
+  border: solid #47b18f;
+  border-width: 0 0 4px 0;
+  border-radius: .25rem;
+  font-family:inherit;
+  color: #47b18f;
+  font-size: 2rem;
+  background: transparent;
+  text-align: center;
+}
+input.playerName:active, 
+input.playerName:focus,
+input.playerName:hover,
+input.add-players:active,
+input.add-players:focus,
+input.add-players:hover{
+  border: solid #ffffff;
+  border-width: 0 0 4px 0;
+  outline: none;
+}
+
+#addPlayers input{
+  margin: 0;
+  padding: 0;
+}
+#addPlayers label{
+  white-space: nowrap;
+  border: none;
+  margin: 0;
+}
+#addPlayers button{
+  max-width: fit-content;
+  margin: 0 0 0 15px;
+}
+
+/* *//* * *//* * *//* */
+
+.dice{
+  background-color: #9c060c;
+  height: 200px;
+  width: 200px;
+  border-radius: 1rem;
+  display: grid;
+  grid-template:  auto / 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  gap: 0;
+  padding: 10px;
+  margin: 2rem 0;
+}
+
+.dice-dot{
+  display: inline-block;
+  background-color: #ffffff;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+}
+
+.middle{
+  grid-area: span 1/ span 2;
+}
+
+.hide{
+  display: none;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+.dice-roll, .reset-btn{
+  width: 220px;
+  margin: auto;
+  font-family: inherit;
+  font-size: 1.5rem;
+  background-color: #47b18f;
+  color: #ffffff;
+  border: none;
+  border-radius: .25rem;
+  padding: .5rem 1rem;
+}
+
+.dice-rolled{
+  background-color: #8b8b8b;
+  /*color: #47b18f;*/
+  transition: 0.3s ease;
+}
+#result{
+  width: 100%;
+}
+/* *//* * *//* * *//* */
